@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #6e6c6c;
+  color: #faf6f2;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  background-color: #faf6f2;
+  color: black;
+  border-radius: 6px;
+}
+
+.burger_Menu {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: #faf6f2;
+
+}
+
+.content {
+  margin-top: 70px; 
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .burger_Menu {
+    display: block;
+ 
   }
-  to {
-    transform: rotate(360deg);
+
+  nav {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 1rem;
+    background-color: #4e4e4e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+
+  nav.nav-open {
+    display: flex;
+  }
+
+  nav a {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
   }
 }

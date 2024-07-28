@@ -1,0 +1,129 @@
+.containerHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    box-sizing: border-box;
+   background-color: #f0f0f0;
+    position: relative;
+}
+
+.dynamic_comp {
+    margin-bottom: 20px; 
+}
+.cardDiv{
+  position: absolute;
+  top:10%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(238, 216, 216);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2p 10px rgba(0,0,0,0.1);
+z-index: 10000;
+}
+
+
+.error_message {
+  position: absolute;
+  top:18%;
+
+}
+.destinationInput, .dateInput {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.label{
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bolt;
+}
+.input input{
+  flex: 1;
+  padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    outline: none;
+ }
+ .icon{
+  font-size: 1.5rem;
+  color: red;
+  font-weight: 800;
+ }
+
+ .searchButton {
+  background-color: #fcc6a0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.searchButton:hover {
+  background-color: #f6ac52;
+}
+
+.iconClose{
+  position: absolute;
+  right: 10px;
+}
+
+.country_info {
+  position: absolute;
+  top:310px;
+  z-index: 20000;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width:380px;
+  min-height: 250px;
+  
+}
+
+.flagsImg {
+  max-width: 100px;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cardDiv {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 70%;
+  }
+
+  .destinationInput, .dateInput {
+      margin-right: 0;
+      margin-bottom: 30px;
+      width: 100%;
+  }
+
+  .input input {
+      width: 90%;
+  }
+
+  .searchButton {
+      width: 100%;
+      justify-content: center;
+  }
+  label{
+    padding-bottom: 10px;
+  }
+  .input{
+    display: flex;
+
+  }
+  
+  
+}

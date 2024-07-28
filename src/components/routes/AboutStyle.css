@@ -1,0 +1,26 @@
+.text_about h3{
+    text-align: center;
+}
+
+.text_about p{
+    font-family: Arial і Helvetica;
+    font-size: 1.1rem;
+    padding:   10px 0  0 10px;
+}
+.image_guide{
+    display: flex;
+    flex-direction: row;
+overflow: hidden;
+}
+
+.image_guide img{
+    width: 20%;
+    transition: transform 0.3s ease;
+    margin: 0;
+    border-radius: 6px;
+}
+
+.image_guide img:hover{
+    transform: scale(1.5); 
+      z-index: 1;
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+.destination{
+    margin: 4rem 6rem;
+    
+}
+
+.destination h1{
+text-align: center;
+font-size: 3rem;
+}
+
+.destination p{
+    text-align: center;
+   font-size: 1.1rem;
+   margin-top: 10px;
+}
+
+.block_descrip{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.block-text{
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+    font-family: Arial і Helvetica;
+}
+
+.block-text h2{
+padding-bottom: 1rem;
+text-align: center;
+}
+
+.imageGroupVietnam {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+   /* z-index: -99; */
+}
+.imageGroupVietnam img{
+   width: 45%;
+   height: 350px;
+   object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+    transition:transform 0.3s ease-in-out;
+}
+.imageGroupVietnam img:nth-child(2){
+    position: absolute;
+    top: -22px;
+    right: 0;
+   
+}
+
+.imageGroupVietnam img:hover{
+transform: scale(1.3);
+}
+
+
+
+.block_descrip_2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 42px;
+}
+.block_text2{
+    width: 45%;
+    text-align: end;
+    font-size: 1.1rem;
+    font-family: Arial і Helvetica;
+   
+}
+
+.block_text2 h2{
+    text-align: center;
+}
+.image_2{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+   /* z-index: -99; */
+}
+
+.image_2 img{
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+     border-radius: 6px;
+     box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+     transition:transform 0.3s ease-in-out;
+}
+
+
+.image_2 img:nth-child(2){
+    position: absolute;
+    top: 22px;
+    right: 0;
+
+}
+
+.image_2 img:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+@media(max-width:768px) {
+    .destination {
+        margin: 3rem 2rem;
+    }
+
+    .destination h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .block_descrip {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .imageGroupVietnam {
+        width: 100%;
+    }
+
+    .block-text {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .block_descrip_2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image_2 {
+        width: 100%;
+    }
+
+    .block_text2 {
+        width: 100%;
+        text-align: center;
+    }
+
+}
