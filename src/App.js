@@ -51,7 +51,7 @@ function App() {
 
       <div className="content">
         <Routes basename="/Travel-">
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/price" element={<Price />} />
           <Route path="/contact" element={<Contact />} />
